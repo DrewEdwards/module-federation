@@ -1,27 +1,29 @@
 {
-  "name": "docs",
-  "version": "0.0.0",
+  "name": "dedicated-account",
+  "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --port 3001",
+    "dev": "rm -rf .next;NEXT_PRIVATE_LOCAL_WEBPACK=true next dev -p 3001",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
-    "next": "13.0.0",
+    "@module-federation/nextjs-mf": "^8.8.3",
+    "next": "^14.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "ui": "*"
+    "ui": "*",
+    "webpack": "^5.96.1"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",
-    "eslint": "7.32.0",
-    "eslint-config-custom": "*",
-    "tsconfig": "*",
     "@types/node": "^17.0.12",
     "@types/react": "^18.0.22",
     "@types/react-dom": "^18.0.7",
+    "eslint": "7.32.0",
+    "eslint-config-custom": "*",
+    "tsconfig": "*",
     "typescript": "^4.5.3"
   }
 }
