@@ -1,0 +1,22 @@
+{
+  "name": "@other_drew/ui",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@emotion/cache": "^11.13.5",
+    "@emotion/react": "^11.10.0",
+    "@emotion/server": "^11.11.0",
+    "@emotion/styled": "^11.10.0",
+    "@mui/material": "^5.13.0",
+    "@mui/material-nextjs": "^6.1.9"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  }
+}
