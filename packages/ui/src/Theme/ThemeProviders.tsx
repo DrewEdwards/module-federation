@@ -1,17 +1,11 @@
-import { AppProps } from 'next/app';
 import Head from 'next/head';
 import { AppCacheProvider } from '@mui/material-nextjs/v14-pagesRouter';
 import { ThemeProvider } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
-
-interface ThemeProviderProps extends AppProps {
-  appProps: any,
-  theme: any,
-  children: React.Component
-}
+import theme from './theme'
 
 export function ThemeProviders(props: any) {
-  const { theme, children } = props;
+  const { children } = props;
 
   return <>
     <AppCacheProvider {...props}>

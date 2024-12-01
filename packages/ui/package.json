@@ -8,12 +8,14 @@
     "clean": "rm -rf dist"
   },
   "dependencies": {
-    "@emotion/cache": "^11.13.5",
-    "@emotion/react": "^11.10.0",
-    "@emotion/server": "^11.11.0",
-    "@emotion/styled": "^11.10.0",
-    "@mui/material": "^5.13.0",
-    "@mui/material-nextjs": "^6.1.9"
+    "@emotion/cache": "latest",
+    "@emotion/react": "latest",
+    "@emotion/server": "latest",
+    "@emotion/styled": "latest",
+    "@mui/icons-material": "latest",
+    "@mui/material": "latest",
+    "@mui/material-nextjs": "latest",
+    "next": "^14.2.18"
   },
   "peerDependencies": {
     "react": "^18.0.0",
